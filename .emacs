@@ -1,3 +1,5 @@
+;;;; load additional modes from .emacs.d/ directory
+(add-to-list 'load-path "~/.emacs.d/kivy/")
 
 ;;;; enable wheel mouse
 (mouse-wheel-mode t)
@@ -156,3 +158,6 @@
 
 (put 'downcase-region 'disabled nil)
 
+;; support for Kivy *.kv files
+(require 'kivy-mode)
+(add-to-list 'auto-mode-alist '("\\.kv$" . kivy-mode))
