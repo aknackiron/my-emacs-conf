@@ -1,5 +1,10 @@
 ;;;; load additional modes from .emacs.d/ directory
+;;;; NC for Kivy syntax
 (add-to-list 'load-path "~/.emacs.d/kivy/")
+;;;; NC for Robot Framework highlighting, available at https://github.com/sakari/robot-mode
+(add-to-list 'load-path "~/.emacs.d/robot/")
+
+
 
 ;;;; enable wheel mouse
 (mouse-wheel-mode t)
